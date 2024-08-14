@@ -14,3 +14,26 @@ body {
   /* color: #3c2a21; */
   font-size: 1.1rem;
 }
+
+.outer {
+    border: 2px dashed rbga(255, 255, 255, 0.438);
+    width: 400px;
+    height: 200px;
+    color: #3c2a21;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-direction: center;
+}
+
+p{
+    padding: 20px;
+}
+.limebox {
+    background-color: limegreen;
+}
+
+.coralbox {
+    background-color: coral;
+}
