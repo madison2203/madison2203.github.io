@@ -9,12 +9,80 @@ p1 {
   display: flex;
   padding: 20px;
   text-align: center;
-  border: 2px solid black;
-  box-sizing: border-box;
 }
 
 p2 {
   padding: 20px;
   text-align: right;
   display: flex;
+}
+
+.Q1 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q2 {
+  font-size: large;
+  font-weight: bold;
+  text-align: right;
+}
+
+.para2 {
+  text-align: right;
+}
+
+.Q3 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q4 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q5 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q6 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q7 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q8 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q9 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q10 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q11 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q12 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.Q13 {
+  font-size: large;
+  font-weight: bold;
 }
