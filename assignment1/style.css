@@ -1,88 +1,248 @@
+.container {
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 150px);
+  min-height: 100%;
+  max-width: 1fr;
+  min-width: none;
+  grid-auto-rows: 100px;
+}
+
+/* Since my answers are a little long so I chose the scrolling to appear all the text without changing the size of the grid. At first place, I want the content to appear all in one box but it was impossible for me to stretch the box size so I ended up with the scrolling. Sofar, keeping the boxes in one size creates a decent format for my website */
+
+.container > div {
+  box-sizing: border-box;
+  border: 2px solid bisque;
+  padding: 10px 10px;
+}
+/* I chose the color white with beige grids to make it simple to read, as well as a little bit of minimalistic */
+.header {
+  grid-area: 1/1/1/3;
+}
 .subheader {
-  text-align: rigth;
+  grid-area: 1/3/1/3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   font-size: large;
 }
-
-p1 {
-  display: flex;
-  padding: 20px;
-  text-align: center;
-}
-
-p2 {
-  padding: 20px;
-  text-align: right;
-  display: flex;
-}
-
 .Q1 {
   font-size: large;
   font-weight: bold;
+  padding: 10px;
+  max-height: 500px;
+  width: 500px;
+  grid-area: 2/1/3/2;
+}
+
+.para1 {
+  padding: 10px 10px;
+  width: 500px;
+  max-width: 500px;
+  grid-area: 3/1/3/3;
+  overflow: scroll;
 }
 
 .Q2 {
   font-size: large;
   font-weight: bold;
-  text-align: right;
+  text-align: left;
+  padding: 10px;
+  max-height: 500px;
+  grid-area: 2/2/3/2;
 }
 
 .para2 {
-  text-align: right;
+  text-align: left;
+  padding: 10px 10px;
+  width: 500px;
+  max-height: 500px;
+  grid-area: 3/2/3/3;
 }
 
 .Q3 {
   font-size: large;
   font-weight: bold;
+  padding: 10px;
+  max-height: 500px;
+  width: 500px;
+  grid-area: 2/5/4/3;
+}
+
+.para3 {
+  text-align: left;
+  display: left;
+  padding: 10px 10px;
+  max-height: 500px;
+  width: 500px;
+  grid-area: 3/3/3/3;
 }
 
 .Q4 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  max-height: 500px;
+  text-align: left;
+  grid-area: 4/1/4/2;
+}
+
+.para4 {
+  padding: 10px 10px;
+  text-align: left;
+  width: 500px;
+  max-height: 500px;
+  grid-area: 5/1/5/1;
+  overflow: scroll;
 }
 
 .Q5 {
   font-size: large;
   font-weight: bold;
+  padding: 10px;
+  max-height: 500px;
+  text-align: left;
+  grid-area: 4/2/5/2;
+}
+
+.para5 {
+  width: 500px;
+  padding: 10px 10px;
+  text-align: left;
+  grid-area: 5/2/5/2;
 }
 
 .Q6 {
   font-size: large;
   font-weight: bold;
+  text-align: left;
+  padding: 10px 10px;
+  grid-area: 4/3/5/3;
+}
+
+.para6 {
+  padding: 10px 10px;
+  text-align: left;
+  grid-area: 5/3/5/3;
+  overflow: scroll;
 }
 
 .Q7 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 6/1/6/2;
+}
+
+.para7 {
+  padding: 10px 10px;
+  text-align: left;
+  grid-area: 7/1/7/2;
+  overflow: scroll;
+  min-width: 500px;
+  max-height: 500px;
 }
 
 .Q8 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 6/2/6/2;
+}
+
+.para8 {
+  padding: 10px 10px;
+  text-align: left;
+  grid-area: 7/3/7/2;
+  overflow: scroll;
 }
 
 .Q9 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 6/3/6/4;
 }
 
+.para9 {
+  padding: 10px 10px;
+  width: 500px;
+  grid-area: 7/3/7/4;
+  overflow: scroll;
+}
 .Q10 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 8/1/8/2;
 }
-
+.para10 {
+  padding: 10px 10px;
+  width: 500px;
+  grid-area: 9/1/9/2;
+  overflow: scroll;
+}
 .Q11 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 8/2/8/3;
 }
-
+.para11 {
+  padding: 10px 10px;
+  grid-area: 9/2/9/3;
+  overflow: scroll;
+}
 .Q12 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 8/3/8/4;
+}
+
+.para12 {
+  padding: 10px 10px;
+  grid-area: 9/3/9/4;
 }
 
 .Q13 {
   font-size: large;
   font-weight: bold;
+  padding: 10px 10px;
+  grid-area: 10/1/10/1;
 }
+
+.para13 {
+  padding: 10px 10px;
+  grid-area: 10/2/10/3;
+}
+
+.picture {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  font-weight: bold;
+  text-align: center;
+}
+
+.pic3 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.description2 {
+  font-weight: bold;
+  text-align: center;
+}
+/* The old format display was taken from an online article that introduced this website. I put them next to each other at the end of the page because I could not insert them next to question 8 or in any boxes. However, these pictures display at the bottom make it easy to read and have some comparison */
+.article {
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+/* I put the link to the page so it will be easier to access */
