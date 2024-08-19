@@ -225,6 +225,7 @@
 }
 
 .description {
+  padding: 10px;
   font-weight: bold;
   text-align: center;
 }
@@ -236,6 +237,7 @@
 }
 
 .description2 {
+  padding: 10px;
   font-weight: bold;
   text-align: center;
 }
