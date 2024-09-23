@@ -1,0 +1,82 @@
+body {
+  background-color: #cccccc;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  display: left;
+}
+
+header {
+  padding: 30px;
+  text-align: left;
+}
+
+h2 {
+  padding: 10px;
+  display: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 65px;
+  color: #5c5c5c;
+}
+
+h3 {
+  padding: 10px;
+  display: center;
+  justify-content: center;
+  text-align: right;
+  font-family: "IM fell DW Pica", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 85;
+  color: grey;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+  border: 50px white;
+  outline: 50;
+}
+.pillbutton {
+  padding: 10px 15px;
+  font-size: 20px;
+  margin: 1rem 0;
+  border-radius: 1em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.video {
+  max-width: 100%;
+}
