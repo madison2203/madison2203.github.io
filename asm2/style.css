@@ -61,16 +61,24 @@ nav a {
   outline: 50;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 10px 10%;
 }
 
-.audio-container {
+.main-video {
+  border-radius: 5px;
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.video {
+  width: 50;
+  border-radius: 5px;
+}
+
+.title {
+  color: black;
 }
