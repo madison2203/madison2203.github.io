@@ -81,4 +81,6 @@ nav a {
 
 .title {
   color: black;
+  display: flex;
+  text-align: left;
 }
