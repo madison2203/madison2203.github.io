@@ -102,12 +102,12 @@ nav a {
 .video-list {
   background-color: white;
   border-radius: 20px;
-  height: 450px;
+  height: 350px;
   overflow-y: scroll;
 }
 
 .video-list::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
 .video-list::-webkit-scrollbar-track {
@@ -152,4 +152,12 @@ nav a {
 
 .vid.title {
   font-size: 30px;
+}
+
+.video-list button {
+  border-radius: 1px;
+}
+
+.video-list button:hover {
+  border-radius: 0.17;
 }
