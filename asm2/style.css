@@ -2,15 +2,13 @@ body {
   background-color: #cccccc;
   margin: auto;
   max-width: 900px;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
   font-family: "Young Serif", serif;
-  font-weight: 400;
+  font-weight: 400px;
   font-style: normal;
   text-align: left;
   display: left;
@@ -45,6 +43,12 @@ h3 {
   color: grey;
 }
 
+h4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 nav {
   margin-top: 20px;
   text-align: center;
@@ -66,11 +70,10 @@ nav a {
 }
 
 .outer {
-  border: 3px solid #e5e5cb68;
-  max-width: 900px;
+  border: 3px solid #9a9a9a;
+  min-width: 900px;
   min-height: 500px;
   padding: 20px;
-  display: flex;
   flex-direction: column;
 }
 
@@ -79,35 +82,36 @@ nav a {
   grid-template-columns: 2fr 1fr;
   gap: 30px;
   align-items: flex-start;
-  padding: 10px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
+  max-width: 700%;
 }
 
 .main-video {
-  height: 150%;
+  height: 500%;
   width: 500px;
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .video {
+  height: 600px;
   border-radius: 10px;
   padding: 10px;
-  background-color: white;
+  background-color: #c0c0c0;
 }
 
 .video-list {
-  background-color: white;
+  background-color: #c0c0c0;
   border-radius: 20px;
-  height: 350px;
+  height: 500px;
   overflow-y: scroll;
 }
 
 .video-list::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 
 .video-list::-webkit-scrollbar-track {
@@ -121,24 +125,25 @@ nav a {
 }
 
 .title {
-  color: black;
+  font-family: "IM Fell DW Pica", serif;
+  font-style: italic;
+  font-size: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .vid video {
-  width: 100px;
+  width: 50px;
   border-radius: 10px;
 }
 
 .vid {
   display: flex;
-  align-items: center;
   gap: 15px;
   border-radius: 10px;
   margin: 30px;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -147,17 +152,35 @@ nav a {
 }
 
 .vid.active {
-  background: #cccccc;
+  background: #808080;
 }
 
-.vid.title {
-  font-size: 30px;
+.vid .title {
+  font-size: 15px;
+  display: flex;
+  text-align: left;
 }
 
 .video-list button {
-  border-radius: 1px;
+  border-radius: 5px;
 }
 
 .video-list button:hover {
   border-radius: 0.17;
+}
+
+.video-controls button {
+  border: none;
+  padding: 10;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-controls button img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }

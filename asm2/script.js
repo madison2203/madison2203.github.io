@@ -98,3 +98,7 @@ listVideo.forEach((video) => {
     }
   };
 });
+
+const playPauseButton = document.querySelector("#play-pause-btn");
+playPauseButton.addEventListener("click", togglePlay);
+const playPauseImg = document.querySelector("#play-pause-img");
