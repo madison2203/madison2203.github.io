@@ -62,37 +62,89 @@ nav a {
   color: grey;
 }
 
+.outer {
+  border: 3px solid #e5e5cb68;
+  max-height: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 15px;
+  gap: 30px;
   align-items: flex-start;
-  padding: 5px 5%;
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
 }
 
 .main-video {
-  height: 500px;
-  width: 75%;
-  border-radius: 5px;
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
   padding: 10px;
   cursor: pointer;
 }
 
 .video {
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
   padding: 10px;
   background-color: white;
 }
 
 .video-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  height: 30%;
+  overflow-y: scroll;
 }
+
+.video-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.video-list::-webkit-scrollbar-track {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.video-list::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+}
+
 .title {
   color: black;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.vid video {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.vid {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.vid:hover {
+  background: grey;
+}
+
+.vid.active {
+  background: #cccccc;
+}
+
+.vid.title {
+  font-size: 30px;
 }
