@@ -70,7 +70,7 @@ nav a {
 }
 
 .outer {
-  border: 3px solid #9a9a9a;
+  border: 3px dashed #9a9a9a;
   min-width: 900px;
   min-height: 500px;
   padding: 20px;
@@ -101,6 +101,22 @@ nav a {
   border-radius: 10px;
   padding: 10px;
   background-color: #c0c0c0;
+}
+
+.video-controls button {
+  border: none;
+  padding: 10;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-controls button img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 .video-list {
@@ -167,20 +183,4 @@ nav a {
 
 .video-list button:hover {
   border-radius: 0.17;
-}
-
-.video-controls button {
-  border: none;
-  padding: 10;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.video-controls button img {
-  width: 24px;
-  height: 24px;
-  display: block;
 }
