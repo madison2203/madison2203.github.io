@@ -19,6 +19,10 @@
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6fe6811ed6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <header>
     <h1>Media Player Website</h1>
@@ -35,13 +39,29 @@
         <li><a href="#">Merchandise</a></li>
       </ul>
     </nav>
+
     <br />
+
     <div class="outer">
       <div class="container">
         <div class="main-video">
           <div class="video">
             <video src="the-1.mp4" controls></video>
             <h4 class="title">01. the 1</h4>
+
+            <div class="progress-bar">
+              <span id="progress-bar-fill"></span>
+            </div>
+
+            <div class="controls">
+              <div>
+                <i class="fa-solid fa-backward" style="color: #808080"></i>
+              </div>
+              <div><i class="fa-solid fa-play" style="color: #808080"></i></div>
+              <div>
+                <i class="fa-solid fa-forward" style="color: #808080"></i>
+              </div>
+            </div>
           </div>
         </div>
 

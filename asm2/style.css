@@ -82,41 +82,40 @@ nav a {
   grid-template-columns: 2fr 1fr;
   gap: 30px;
   align-items: flex-start;
-  padding: 20px;
-  max-width: 700%;
+  padding: 10px;
+  max-width: 900%;
 }
 
 .main-video {
-  height: 500%;
+  height: 900%;
   width: 500px;
   border-radius: 10px;
-  padding: 10px;
   cursor: pointer;
   display: flex;
   justify-content: center;
 }
 
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .video {
   height: 600px;
   border-radius: 10px;
   padding: 10px;
   background-color: #c0c0c0;
-}
-
-.video-controls button {
-  border: none;
-  padding: 10;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.video-controls button img {
-  width: 24px;
-  height: 24px;
-  display: block;
 }
 
 .video-list {
@@ -136,7 +135,7 @@ nav a {
 }
 
 .video-list::-webkit-scrollbar-thumb {
-  background-color: #666;
+  background-color: #6666;
   border-radius: 10px;
 }
 
@@ -149,7 +148,7 @@ nav a {
 }
 
 .vid video {
-  width: 50px;
+  width: 100px;
   border-radius: 10px;
 }
 
@@ -172,7 +171,7 @@ nav a {
 }
 
 .vid .title {
-  font-size: 15px;
+  font-size: 20px;
   display: flex;
   text-align: left;
 }
@@ -183,4 +182,20 @@ nav a {
 
 .video-list button:hover {
   border-radius: 0.17;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #cccccc;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: grey;
+  width: 0;
+  transition: width 0.3s ease;
 }
