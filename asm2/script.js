@@ -96,7 +96,7 @@ listVideo.forEach((video) => {
     }
   };
 });
-
+// I want to make it like  a playlist and have some interaction before choosing the video to play.
 let progress = document.getElementById("progress");
 let song = document.getElementById("song");
 let ctrlIcon = document.getElementById("ctrlIcon");
@@ -117,3 +117,4 @@ function playPause() {
     ctrlIcon.classList.remove("fa-play");
   }
 }
+//  so far I just managed to code the play button, I ddi try to code the progress bar as well as the backward or forward button but they didn't work.
