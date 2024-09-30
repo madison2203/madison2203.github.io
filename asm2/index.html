@@ -34,7 +34,7 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Music</a></li>
         <li><a href="#">Merchandise</a></li>
       </ul>
@@ -46,31 +46,40 @@
       <div class="container">
         <div class="main-video">
           <div class="video">
-            <video src="the-1.mp4" controls></video>
+            <video id="song" src="the-1.mp4" controls></video>
             <h4 class="title">01. the 1</h4>
 
-            <div class="progress-bar">
-              <span id="progress-bar-fill"></span>
-            </div>
+             <div class="controls">
+               
+              <div class="song-slider">
+                <input type="range" value="0" class="seek-bar">
+              </div>
 
-            <div class="controls">
               <div>
                 <i class="fa-solid fa-backward" style="color: #808080"></i>
               </div>
-              <div><i class="fa-solid fa-play" style="color: #808080"></i></div>
+              <div onclick="playPause()">
+                <i
+                  class="fa-solid fa-play"
+                  id="ctrlIcon"
+                  style="color: #808080"
+                ></i>
+              </div>
               <div>
                 <i class="fa-solid fa-forward" style="color: #808080"></i>
               </div>
+  <!-- after the controls I want to make a progress bar but since I still haven't find out my mistake -->
+
+            </div>
             </div>
           </div>
         </div>
-
+<!-- since I'm doing the music album "folklore" by Taylor swift, I decided to do the full album display -->
         <div class="video-list">
           <div class="vid active">
             <video src="the-1.mp4" controls></video>
             <h4 class="title">01. the 1</h4>
           </div>
-
           <div class="vid">
             <video src="cardigan.mp4" controls></video>
             <h4 class="title">02. cardigan</h4>
@@ -149,4 +158,6 @@
       </div>
     </div>
   </body>
+
+
 </html>

@@ -74,41 +74,41 @@ nav a {
   min-width: 900px;
   min-height: 500px;
   padding: 20px;
-  flex-direction: column;
 }
 
 .container {
   display: flex;
-  grid-template-columns: 2fr 1fr;
   gap: 30px;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px;
   max-width: 900%;
 }
 
 .main-video {
-  height: 900%;
+  height: 500%;
   width: 500px;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
-.controls div {
+.control div {
   width: 100px;
-  height: 100px;
-  margin: 10px;
+  height: 50px;
+  margin: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
 }
 .video {
@@ -182,20 +182,4 @@ nav a {
 
 .video-list button:hover {
   border-radius: 0.17;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 10px;
-  background-color: #cccccc;
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-.progress-bar span {
-  display: block;
-  height: 100%;
-  background-color: grey;
-  width: 0;
-  transition: width 0.3s ease;
 }
