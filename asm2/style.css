@@ -1,3 +1,4 @@
+/* <!-- "folklore" album is mainly about the characters she cretaed and it has a fictional vibe so I chose the color grey as a main color for this website --> */
 body {
   background-color: #cccccc;
   margin: auto;
@@ -42,7 +43,7 @@ h3 {
   font-size: 85;
   color: grey;
 }
-
+/* the font is exactly like the album */
 h4 {
   text-align: center;
   display: flex;
@@ -78,7 +79,7 @@ nav a {
 
 .container {
   display: flex;
-  gap: 30px;
+  gap: 10px;
   align-items: center;
   padding: 10px;
   max-width: 900%;
@@ -94,11 +95,28 @@ nav a {
   align-items: center;
 }
 
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #808080;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  width: 0;
+  transition: width 0.3s ease;
+}
+
 .controls {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .control div {
@@ -110,7 +128,9 @@ nav a {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  gap: 5rem;
 }
+
 .video {
   height: 600px;
   border-radius: 10px;
@@ -150,8 +170,11 @@ nav a {
 .vid video {
   width: 100px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+/* with the current display, I want to make the main video center but I'm not sure how because I have applied the flex display */
 .vid {
   display: flex;
   gap: 15px;
@@ -182,4 +205,19 @@ nav a {
 
 .video-list button:hover {
   border-radius: 0.17;
+}
+
+.duration {
+  position: absolute;
+  right: 10;
+  padding: 5px;
+  font-size: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "IM fell DW Pica", serif;
 }

@@ -39,6 +39,7 @@
         <li><a href="#">Merchandise</a></li>
       </ul>
     </nav>
+<!--  the reason why I have these categories is that I want to make it look interesting and curious -->
 
     <br />
 
@@ -46,14 +47,15 @@
       <div class="container">
         <div class="main-video">
           <div class="video">
-            <video id="song" src="the-1.mp4" controls></video>
+            <video id="song" src="the-1.mp4" controls autoplay></video>
             <h4 class="title">01. the 1</h4>
+            <div class="progress-bar">
+              <!-- <span id="progress-bar-fill"></span> -->
+              <span class="duration">00:00</span>
+            </div>
 
              <div class="controls">
-               
-              <div class="song-slider">
-                <input type="range" value="0" class="seek-bar">
-              </div>
+              
 
               <div>
                 <i class="fa-solid fa-backward" style="color: #808080"></i>
@@ -68,13 +70,13 @@
               <div>
                 <i class="fa-solid fa-forward" style="color: #808080"></i>
               </div>
-  <!-- after the controls I want to make a progress bar but since I still haven't find out my mistake -->
+  <!-- after the controls I want to make a progress bar and the current time but since I still haven't find out my mistake. So far I just have the bar and the time number -->
 
             </div>
             </div>
           </div>
         </div>
-<!-- since I'm doing the music album "folklore" by Taylor swift, I decided to do the full album display -->
+<!-- since I'm doing the music album "folklore" by Taylor swift, I decided to do the full album display like the Youtube format page -->
         <div class="video-list">
           <div class="vid active">
             <video src="the-1.mp4" controls></video>
@@ -157,7 +159,12 @@
         </div>
       </div>
     </div>
-  </body>
+<!-- I attached Taylor's page to shout out to her  -->
+ <br/>
+<footer>
+   Authorised by <br/> 
+  <a href="https://www.taylorswift.com/"> Taylor Swift</a>
+</footer>
 
-
+</body>
 </html>

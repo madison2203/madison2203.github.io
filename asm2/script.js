@@ -1,5 +1,3 @@
-video.removeAttribute("controls");
-
 const videoList = [
   {
     video: "the-1.mp4",
