@@ -7,14 +7,10 @@ body {
 
 .photo {
   opacity: 70%;
-  width: auto;
-  height: 100vh;
-  display: block;
   background-size: cover;
 }
 
 .b1 {
   z-index: 1;
-  background-color: transparent;
-  top: 700px;
+  top: 10px;
 }
