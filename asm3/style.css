@@ -4,13 +4,214 @@ body {
   background-color: grey;
   scroll-behavior: smooth;
 }
-
-.photo {
-  opacity: 70%;
-  background-size: cover;
+/* I tried to gather the name and the background picture toghether but it did not satisfied my expectation, so I just respectively adding styles to each one. */
+/* I also added the animation effect for the name of the spots to make it more interactive. */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0, 5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
-.b1 {
+.cityhall {
+  background-position: cover;
+  opacity: 50%;
+}
+
+.name1 {
+  position: absolute;
   z-index: 1;
-  top: 10px;
+  top: 1100px;
+  left: 100px;
+  width: 1300px;
+  opacity: 100%;
+  justify-content: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building1 {
+  position: absolute;
+  z-index: 1;
+  top: 1300px;
+  width: 1300px;
+  left: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building1:hover {
+  transform: scale(1.1);
+}
+/* I added the hover to make sure the user is about to click in the spot to rea the information */
+.bitexco {
+  opacity: 50%;
+  background-position: cover;
+}
+.name2 {
+  position: absolute;
+  z-index: 1;
+  top: 2050px;
+  left: 25px;
+  width: 1300px;
+  opacity: 100%;
+  justify-content: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building2 {
+  position: absolute;
+  z-index: 1;
+  top: 2150px;
+  width: 650px;
+  left: 750px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building2:hover {
+  transform: scale(1.1);
+}
+
+.notredame {
+  opacity: 50%;
+  background-position: cover;
+}
+.name3 {
+  position: absolute;
+  z-index: 1;
+  top: 3100px;
+  left: 90px;
+  width: 1300px;
+  opacity: 100%;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building3 {
+  position: absolute;
+  z-index: 1;
+  top: 3200px;
+  width: 1100px;
+  left: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building3:hover {
+  transform: scale(1.1);
+}
+
+.landmark81 {
+  opacity: 50%;
+  background-position: cover;
+}
+.name4 {
+  position: absolute;
+  z-index: 1;
+  top: 3500px;
+  width: 1800px;
+  justify-content: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+/* although the animation effect works on others but not this one */
+.building4 {
+  position: absolute;
+  z-index: 1;
+  top: 4300px;
+  width: 450px;
+  left: 950px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building4:hover {
+  transform: scale(1.1);
+}
+
+.postoffice {
+  background-position: cover;
+  opacity: 50%;
+}
+.name5 {
+  position: absolute;
+  z-index: 1;
+  top: 5200px;
+  left: 100px;
+  width: 1300px;
+  opacity: 100%;
+  justify-content: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building5 {
+  position: absolute;
+  z-index: 1;
+  top: 5350px;
+  width: 1200px;
+  left: 150px;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: cover;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.building5:hover {
+  transform: scale(1.1);
+}
+
+.container .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: sandybrown;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.container .popup-image span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.container .popup-image img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .popup-image img {
+    width: 95%;
+  }
 }
