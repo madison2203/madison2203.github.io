@@ -34,7 +34,7 @@ body {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-.building1 {
+#building1 {
   position: absolute;
   z-index: 1;
   top: 1300px;
@@ -47,9 +47,10 @@ body {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-.building1:hover {
+#building1:hover {
   transform: scale(1.1);
 }
+
 /* I added the hover to make sure the user is about to click in the spot to rea the information */
 .bitexco {
   opacity: 50%;
@@ -186,32 +187,20 @@ body {
   top: 0;
   left: 0;
   background-color: sandybrown;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
+  z-index: 10;
   display: none;
 }
-
 .container .popup-image span {
   position: absolute;
   top: 0;
   right: 10px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: black;
   cursor: pointer;
   z-index: 100;
 }
-
 .container .popup-image img {
-  position: absolute;
-  top: 45%;
-  left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-}
-@media (max-width: 768px) {
-  .popup-image img {
-    width: 95%;
-  }
 }
