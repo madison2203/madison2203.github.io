@@ -12,6 +12,39 @@ a {
   color: black;
   size: 100px;
   display: flex;
-  padding: 50px;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  z-index: 1;
+}
+.saigoncityhall {
+  height: 500px;
+  width: 500px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.sgnbitexco {
+  height: 800;
+  width: 1200px;
+  position: absolute;
+  left: 200px;
+}
+.sgnnotredame {
+  position: absolute;
+  height: 800px;
+  width: 1200px;
+  text-align: center;
+  object-fit: cover;
+  left: 200px;
+}
+
+.sglandmark81 {
+  height: 800px;
+  position: absolute;
+  left: 200px;
+}
+.sgpostoffice {
+  height: 1000px;
+  position: absolute;
+  left: 130px;
 }
